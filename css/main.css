@@ -192,6 +192,7 @@ nav li.Current a {
   }
   .hero img {
     display: flex;
+    float: right;
     width: 20%;
     height: 14%;
     size: 30%;
