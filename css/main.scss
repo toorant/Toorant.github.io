@@ -1,0 +1,305 @@
+body {
+    background: #f2f2f2;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background: white;
+    padding: 1em;
+
+
+
+    .logo {
+
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+        display: block;
+        //margin-right: 20em;
+
+        span {
+            color: blue;
+        }
+
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em;
+
+}
+
+
+.hero {
+    text-align: left;
+
+    .her-cta-big {
+        display: none;
+    }
+}
+
+.left-col {
+
+
+    .subhead {
+        font-weight: bold;
+        color: gray;
+        margin: 0.5em;
+        margin-left: -3.25em;
+        padding-left: -0.5em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: -1em 0em 0em -1.5em;
+
+
+    }
+
+    .primary-cta {
+        font-size: 1em;
+        line-height: 2em;
+        margin-left: -3.25em;
+        padding-right: 0%;
+        text-align: justify;
+        //text-align: center;
+        text-justify: inter-word;
+
+
+        a {
+            color: black;
+            font-weight: bold;
+
+
+        }
+
+
+
+    }
+
+    .primary-cta-big {
+        display: none;
+    }
+
+
+}
+
+.hero {
+    img {
+        display: none;
+        // width: 70%;
+        //margin-left: 5em;
+
+
+    }
+}
+
+section.features-section {
+    background: #20272E;
+    color: white;
+    margin-top: -5em;
+
+
+
+
+
+
+    //margin-left: 0em;
+    img {
+
+
+        width: 90%;
+
+        margin-left: -2em;
+        padding-top: 3em;
+        //justify-items: right;
+
+    }
+}
+
+ul.features-list {
+    margin-left: -3.25em;
+    //padding-left: -1em;
+    margin-bottom: 1em;
+    margin-top: -4em;
+
+    //Comeback to this
+    li {
+        font-size: 1.1em;
+        margin-bottom: 1.5em;
+        margin-left: 2em;
+        position: relative;
+        margin-top: 1em;
+
+
+        &:before {
+            content: '';
+            left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/bullet.svg');
+            background-size: contain;
+            margin-right: 0.5em;
+
+        }
+
+    }
+
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #20272E;
+    height: 100vh;
+    padding: 1em;
+
+    ul.primary-nav {
+        margin-top: 5em;
+    }
+
+    li {
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.5em;
+            font-size: 1.1em;
+            text-align: right;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+
+    li.Current a {
+        font-weight: bold;
+    }
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    .mobile-menu,
+    .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+
+
+
+        ul {
+            display: flex;
+            padding-left: 40em;
+        }
+
+        a {
+            color: black;
+            font-size: 1.1em;
+            padding: 0.1em 1em;
+            // text-align: right;
+            //top: 0;
+
+
+
+        }
+
+        ul.primary-nav {
+            margin: 0;
+
+
+
+        }
+
+        li.Current a {
+            font-weight: bold;
+
+        }
+    }
+
+    .hero {
+        .her-cta {
+            display: none
+        }
+
+        .her-cta-big {
+            display: flex;
+            color: black;
+            margin-right: 15em;
+        }
+
+
+
+
+        img {
+            display: flex;
+            width: 20%;
+            height: 14%;
+            margin-left: auto;
+            margin-bottom: 2em;
+            margin-top: -20em;
+
+
+        }
+
+
+
+    }
+
+    section.features-section {
+        .container {
+            img {
+                display: none;
+            }
+
+
+        }
+    }
+
+}
