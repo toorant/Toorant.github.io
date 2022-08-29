@@ -189,6 +189,7 @@ nav li.Current a {
     display: flex;
     color: black;
     margin-right: 15em;
+    position: relative;
   }
   .hero img {
     display: flex;
@@ -199,6 +200,9 @@ nav li.Current a {
     margin-left: auto;
     margin-bottom: 2em;
     margin-top: -20em;
+  }
+  section.features-section {
+    margin-top: 3em;
   }
   section.features-section .container img {
     display: none;
