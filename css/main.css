@@ -7,6 +7,9 @@ body {
 .navbar {
   background: white;
   padding: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .navbar .logo {
   text-decoration: none;
@@ -161,12 +164,12 @@ nav li.Current a {
     background: none;
     position: unset;
     height: auto;
-    width: 100%;
+    width: 90%;
     padding: 0;
   }
   .navbar nav ul {
     display: flex;
-    padding-left: 40em;
+    padding-left: 37em;
   }
   .navbar nav a {
     color: black;
