@@ -7,9 +7,6 @@ body {
 .navbar {
   background: white;
   padding: 1em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .navbar .logo {
   text-decoration: none;
